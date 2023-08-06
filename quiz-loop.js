@@ -88,3 +88,19 @@ for (i = 1; i < 100; i += 9) {
     console.log(`${i} kelipatan 10`);
   }
 }
+
+// 5. Bintang asteriks
+// Problem buatlah bintang seperti berikut
+// let input = 5
+// hasilnya
+// *
+// **
+// ***
+// ****
+// *****
+
+let input = 1;
+console.log("");
+for(i=input;i<=5;i++){
+    console.log("*".repeat(i));
+}
