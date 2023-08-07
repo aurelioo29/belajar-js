@@ -1,44 +1,40 @@
 // 1. Melakukan Looping Menggunakan While
 // Problem
-// Pada tugas ini kamu diminta untuk melakukan looping dalam JavaScript dengan menggunakan syntax while. 
-// Untuk membuat tantangan ini lebih menarik, kamu juga diminta untuk membuat suatu looping yang menghitung maju dan 
+// Pada tugas ini kamu diminta untuk melakukan looping dalam JavaScript dengan menggunakan syntax while.
+// Untuk membuat tantangan ini lebih menarik, kamu juga diminta untuk membuat suatu looping yang menghitung maju dan
 // menghitung mundur. Jangan lupa tampilkan di console juga judul 'LOOPING PERTAMA' dan 'LOOPING KEDUA'.
 //tampilkan output yang menunjukan kalau looping itu maju pada looping pertama dan mundur pada looping kedua
 
 let i = 0;
 
 console.log("* LOOPING PERTAMA");
-while(i < 10)
-{
-      console.log(i);
-      i++;
+while (i < 10) {
+  console.log(i);
+  i++;
 }
 
 let j = 10;
 
 console.log("* LOOPING KEDUA");
-while(j >= 0)
-{
-      console.log(j);
-      j--;
+while (j >= 0) {
+  console.log(j);
+  j--;
 }
 
 // 2. Melakukan Looping Menggunakan For
 // Problem
-// Pada tugas ini kamu diminta untuk melakukan looping dalam JavaScript dengan menggunakan syntax while. 
-// Untuk membuat tantangan ini lebih menarik, kamu juga diminta untuk membuat suatu looping yang menghitung maju dan 
+// Pada tugas ini kamu diminta untuk melakukan looping dalam JavaScript dengan menggunakan syntax while.
+// Untuk membuat tantangan ini lebih menarik, kamu juga diminta untuk membuat suatu looping yang menghitung maju dan
 // menghitung mundur. Jangan lupa tampilkan di console juga judul 'LOOPING PERTAMA' dan 'LOOPING KEDUA'.
 //tampilkan output yang menunjukan kalau looping itu maju pada looping pertama dan mundur pada looping kedua
 
 console.log("LOOPING PERTAMA");
-for(let i = 0; i < 10; i++)
-{
-      console.log(i);
+for (let i = 0; i < 10; i++) {
+  console.log(i);
 }
 console.log("LOOPING KEDUA");
-for(let i = 10; i >= 0; i--)
-{
-      console.log(i);
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
 }
 
 // 3. Angka Ganjil dan Genap
@@ -49,16 +45,12 @@ for(let i = 10; i >= 0; i--)
 // Apabila angka counter adalah angka genap, tuliskan GENAP
 // Apabila angka counter adalah angka ganjil, tuliskan GANJIL
 
-for (let i = 0; i <= 100; i++)
-{
-      if(i % 2 == 0)
-      {
-            console.log(`${i} adalah angka GENAP`);
-      }
-      else
-      {
-            console.log(`${i} adalah angka GANJIL`);
-      }
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 == 0) {
+    console.log(`${i} adalah angka GENAP`);
+  } else {
+    console.log(`${i} adalah angka GANJIL`);
+  }
 }
 
 //4. counter kelipatan
@@ -67,3 +59,46 @@ for (let i = 0; i <= 100; i++)
 // Apabila bukan kelipatan yang ditentukan tidak perlu menuliskan apa-apa
 // Apabila angka counter adalah kelipatan 3 dengan pertambahan 2, kelipatan 6 dengan pertambahan 5, dan kelipatan 10 dengan pertambahan 9, tuliskan:
 // "3 kelipatan 3"dan seterusnya.
+
+console.log("");
+
+console.log("kelipatan 3 dengan pertambahan 2");
+for (i = 1; i < 100; i += 2) {
+  if (i % 3 === 0) {
+    console.log(`${i} kelipatan 3`);
+  }
+}
+
+console.log("");
+
+// kelipatan 6 dengan pertambahan 5
+console.log("kelipatan 6 dengan pertambahan 5");
+for (i = 1; i < 100; i += 5) {
+  if (i % 6 === 0) {
+    console.log(`${i} kelipatan 6`);
+  }
+}
+
+console.log("");
+
+// kelipatan 10 dengan pertambahan 9
+console.log("kelipatan 10 dengan pertambahan 9");
+for (i = 1; i < 100; i += 9) {
+  if (i % 10 === 0) {
+    console.log(`${i} kelipatan 10`);
+  }
+}
+
+// 5. Bintang asteriks
+// Problem buatlah bintang seperti berikut
+// let input = 5
+// hasilnya
+// *
+// **
+// ***
+// ****
+// *****
+
+for (i=0;i<=5;i++){
+      console.log("*".repeat(i))
+}
