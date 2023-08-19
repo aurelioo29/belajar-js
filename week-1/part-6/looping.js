@@ -99,6 +99,12 @@ for (i = 1; i < 100; i += 9) {
 // ****
 // *****
 
-for (i=0;i<=5;i++){
+// for (i=0;i<=5;i++){
+//       console.log("*".repeat(i))
+// }
+
+let input = 5
+
+for (i=0;i<=input;i++){
       console.log("*".repeat(i))
 }
