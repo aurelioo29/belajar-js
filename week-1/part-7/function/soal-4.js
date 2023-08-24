@@ -8,11 +8,11 @@
 function bandingkanAngka(angka1, angka2) {
   //code disini
   if (angka2 > angka1) {
-    return "true";
+    return true;
   } else if (angka1 == angka2) {
-    return "-1";
+    return -1;
   } else {
-    return "false";
+    return false;
   }
 }
 
