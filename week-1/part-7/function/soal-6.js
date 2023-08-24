@@ -5,6 +5,13 @@
 
 function konversiMenit(menit) {
   // you can only write your code here!
+  let jam = Math.floor(menit / 60);
+  let menitBaru = menit % 60;
+  if(menitBaru < 10){
+    return `${jam}:0${menitBaru}`;
+  } else {
+    return `${jam}:${menitBaru}`;
+  }
 }
 
 // TEST CASES
