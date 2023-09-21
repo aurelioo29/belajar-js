@@ -116,8 +116,14 @@ console.log("method slice");
 // console.log(slicedHewan) //["jerapah", "badak"]
 
 let hewan = ["gajah", "jerapah", "badak", "singa"];
-let slicedHewan = hewan.slice(2, 4);
+let slicedHewan = hewan.slice(1, 3);
 console.log(slicedHewan); //["gajah", "jerapah", "badak"]
+
+//itu tergantung data mu isinya apa, kebetulan kan kita taunya gajah jerapah ada di index 0 dan 1 maka bisa pake slice
+
+// let hewan = ["gajah", "jerapah", "badak", "singa"];
+// let slicedHewan = hewan.slice(0,2);
+// console.log(slicedHewan); //["gajah", "jerapah"]
 
 //kalau cuma mau gajah dan badak, dia harus ga kena jerapahnya
 //makanya slice kurang efektif bila ambil data yang melongkap
