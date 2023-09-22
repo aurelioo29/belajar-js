@@ -38,7 +38,7 @@ console.log(array1); // method menghapus elemen pertama pada array, bisa dibilan
 console.log("method unshift");
 // -----------------------
 array1.unshift(0);
-console.log(array1); // method menambahkan data pada urutan pertama, bisa dibilang nambahin sesuatu dipaling kiri wkwk
+console.log(array1); // method menambahkan data pada urutan pertama, bisa dibilang nambahin sesuatu dipaling kiri
 
 // -----------------------
 console.log("method splice");
@@ -50,7 +50,7 @@ console.log("method splice");
 // parameter kedua sebagai penentuan mau menghapus berapa data/elemen/item (bisa juga ga ngehapus apa apa kalau di kasih nilai 0)
 // parameter sisanya, itu untuk nambahin data ke dalam array, jumlahnya bisa banyak
 // |-----------------Misal------------------------------|
-//contoh menghapus 1 item dari index nomor 1
+// contoh menghapus 1 item dari index nomor 1
 // let hewan = ["marmut", "kucing", "tikus"];
 // hewan.splice(1,1);
 // console.log(hewan); //["marmut", "tikus"]
@@ -117,7 +117,8 @@ console.log("method slice");
 
 let hewan = ["gajah", "jerapah", "badak", "singa"];
 let slicedHewan = hewan.slice(1, 3);
-console.log(slicedHewan); //["gajah", "jerapah", "badak"]
+console.log(slicedHewan); //["jerapah", "badak"]
+
 
 //itu tergantung data mu isinya apa, kebetulan kan kita taunya gajah jerapah ada di index 0 dan 1 maka bisa pake slice
 

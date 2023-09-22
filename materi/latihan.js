@@ -97,3 +97,23 @@
 //   j += "*";
 //   console.log(j);
 // }
+
+// let array = [
+//   ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+//   ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+//   ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+//   ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"],
+// ];
+// console.log(array[0][0]) //ini merupakan INDEX ke 0 & Urutan ke 0
+// console.log(array[1][1])
+
+// // for (let i = 0; i < array.length; i++) {
+// //   for (let j = 0; j < array[i].length; j++) {
+// //     console.log([i] [j]);
+// //   }
+// // }
+
+let index = ["A", "B", "C", "D"];
+
+let cek = index[index.length - 1];
+console.log(cek);
