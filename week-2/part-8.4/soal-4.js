@@ -1,18 +1,3 @@
-// function pasanganTerbesar(num) {
-//   let besar = 0;
-//   let konversi = num.toString();
-
-//   for (let i = 0; i < konversi.length - 1; i++) {
-//     console.log(konversi[i]);
-//     // const pair = parseInt(konversi[i] + konversi[i + 1]);
-
-//     // if (pair > besar) {
-//     //   besar = pair;
-//     // }
-//   }
-//   return besar;
-// }
-
 function pasanganTerbesar(num) {
   let numStr = num.toString();
   let maksPasangan = Number(numStr[0] + numStr[1]);
