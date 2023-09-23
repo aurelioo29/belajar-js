@@ -10,15 +10,18 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-  
+  while (true) {
+    num++;
+    let angka = num.toString();
+    let result = "";
+    for (let i = angka.length - 1; i >= 0; i--) {
+      result += angka[i];
+    }
+    if (parseInt(result) === num) {
+      return num;
+    }
+  }
 }
-
-// TEST CASES
-console.log(angkaPalindrome(8)); // 9
-console.log(angkaPalindrome(10)); // 11
-console.log(angkaPalindrome(117)); // 121
-console.log(angkaPalindrome(175)); // 181
-console.log(angkaPalindrome(1000)); // 1001
 
 // loop infinite
 // num++
@@ -26,3 +29,10 @@ console.log(angkaPalindrome(1000)); // 1001
 // balik angka dan isi ke var baru
 // cek apakah num == var yang dibalik angkanya
 // kalau true maka return num
+
+// TEST CASES
+console.log(angkaPalindrome(8)); // 9
+console.log(angkaPalindrome(10)); // 11
+console.log(angkaPalindrome(117)); // 121
+console.log(angkaPalindrome(175)); // 181
+console.log(angkaPalindrome(1000)); // 1001
