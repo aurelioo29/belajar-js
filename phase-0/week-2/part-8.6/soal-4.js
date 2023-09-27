@@ -1,5 +1,16 @@
 function tentukanDeretGeometri(arr) {
-  // you can only write your code here!
+  // cek data dalam array, jika data lebih kecil dari 2 maka akan false
+  if (arr.length < 2) {
+    return false;
+  }
+  let selisih = arr[1] / arr[0];
+  // console.log(selisih);
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] / arr[i - 1] !== selisih) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // TEST CASES

@@ -4,9 +4,9 @@ function hitungJumlahKata(kalimat) {
   // Menghitung panjang kata-kata, tetapi hanya menghitung kata yang tidak kosong
   let jumlahKata = 0;
   for (let i = 0; i < kata.length; i++) {
-    if (kata[i] !== "") {
-      jumlahKata++;
-    }
+    jumlahKata++;
+    // if (kata[i] !== "") {
+    // }
   }
 
   return jumlahKata;

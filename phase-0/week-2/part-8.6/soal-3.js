@@ -1,6 +1,20 @@
 //tentukan apakah ini deret aritmatika atau bukan
 function tentukanDeretAritmatika(arr) {
-  // you can only write your code here!
+  // cek jika array di dalam nya lebih kecil dari 2 maka return false
+  if (arr.length < 2) {
+    return false;
+  }
+
+  // cek selisih dari index 1 - index 0
+  let selisih = arr[1] - arr[0];
+
+  // cek selisih dari index yang lain pada array
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] - arr[i - 1] !== selisih) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // TEST CASES
