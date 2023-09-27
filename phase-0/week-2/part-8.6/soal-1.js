@@ -3,7 +3,7 @@ function cariMean(arr) {
   for (let i = 0; i < arr.length; i++) {
     result += arr[i];
   }
-  let mean = Math.floor(result / arr.length);
+  let mean = Math.round(result / arr.length);
 
   return mean;
 }
