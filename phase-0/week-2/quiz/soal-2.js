@@ -1,5 +1,6 @@
 /*
-Diberikan sebuah function mengelompokkanAngka(arr) yang menerima satu parameter berupa array yang berisi angka-angka. Function akan me-return array multidimensi dimana array tersebut berisikan 3 kategori/kelompok:
+Diberikan sebuah function mengelompokkanAngka(arr) yang menerima satu parameter berupa array yang berisi angka-angka.
+Function akan me-return array multidimensi dimana array tersebut berisikan 3 kategori/kelompok:
 
 kelompok pertama (baris pertama) merupakan angka-angka genap
 kelompok ke-2 (baris ke-2) merupakan angka-angka ganjil
@@ -7,7 +8,21 @@ kelompok ke-3 (baris ke-3) merupakan angka-angka kelipatan 3
 Contoh jika arr inputan adalah [45, 20, 21, 2, 7] maka output: [ [ 20, 2 ], [ 7 ], [ 45, 21 ] ]
 */
 function mengelompokkanAngka(arr) {
-  // you can only write your code here!
+  let result = [[], [], []];
+  for (let i = 0; i < arr.length; i++) {
+    let bilangan = arr[i];
+    //ini kelipatan 3
+    if (bilangan % 3 === 0) {
+      result[2].push(bilangan);
+      //ini angka genap
+    } else if (bilangan % 2 === 0) {
+      result[0].push(bilangan);
+      //ini angka ganjil
+    } else if (bilangan % 2 === 1) {
+      result[1].push(bilangan);
+    }
+  }
+  return result;
 }
 
 // TEST CASES
