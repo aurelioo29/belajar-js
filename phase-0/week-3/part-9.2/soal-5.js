@@ -1,7 +1,14 @@
 //sistem ubah hurufnya misal huruf a diubah menjadi b, c menjadi d, b menjadi c, z menjadi a
 //intinya ubah huruf menjadi huruf setelahnya
 function ubahHuruf(kata) {
+  let abjad = "abcdefghijklmnopqrstuvwxyz";
+  let tampung = "";
   // you can only write your code here!
+  for (let i = 0; i < kata.length; i++) {
+    let angka = abjad.indexOf(kata[i]) + 1;
+    tampung += abjad[angka];
+  }
+  return tampung;
 }
 
 // TEST CASES
@@ -10,3 +17,4 @@ console.log(ubahHuruf("developer")); // efwfmpqfs
 console.log(ubahHuruf("javascript")); // kbwbtdsjqu
 console.log(ubahHuruf("keren")); // lfsfo
 console.log(ubahHuruf("semangat")); // tfnbohbu
+console.log(ubahHuruf("zebrawkwkw"));

@@ -2,9 +2,16 @@
 //cek google bagi yang ga tau apa itu angka prima
 function angkaPrima(angka) {
   // you can only write your code here!
-  if (angka > 1 && angka < angka) {
-    return console.log("Bilangan Tidak Prima");
+  if (angka <= 1) {
+    return false;
   }
+
+  for (let i = 2; i < angka; i++) {
+    if (angka % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // TEST CASES

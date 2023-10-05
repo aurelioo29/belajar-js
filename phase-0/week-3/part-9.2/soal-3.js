@@ -1,5 +1,19 @@
 function cariMedian(arr) {
-  // you can only write your code here!
+  arr.sort;
+
+  const panjangArr = arr.length;
+
+  // Periksa jika jumlah elemen dalam array adalah ganjil
+  if (panjangArr % 2 === 1) {
+    const medianIndex = Math.floor(panjangArr / 2);
+    return arr[medianIndex];
+  } else {
+    // Jika jumlah elemen dalam array adalah genap, ambil rata-rata dari dua nilai tengah
+    const middleIndex1 = panjangArr / 2 - 1;
+    const middleIndex2 = panjangArr / 2;
+    const median = (arr[middleIndex1] + arr[middleIndex2]) / 2;
+    return median;
+  }
 }
 
 // TEST CASES
