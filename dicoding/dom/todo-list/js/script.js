@@ -102,6 +102,7 @@ function addTodo() {
   todos.push(todoObject);
 
   document.dispatchEvent(new Event(RENDER_EVENT));
+  saveData();
 }
 
 function addTaskToCompleted(todoId /* HTMLELement */) {
